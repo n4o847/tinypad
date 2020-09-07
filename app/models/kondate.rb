@@ -1,0 +1,2 @@
+class Kondate < ApplicationRecord
+end

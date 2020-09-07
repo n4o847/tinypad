@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :recipes do
     resources :tsukurepos, only: %w[new create destroy]
   end
+  resources :kondates
   resources :images, only: %w[show]
 
   root to: 'top#index'
