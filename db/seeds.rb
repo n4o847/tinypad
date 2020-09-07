@@ -1,4 +1,5 @@
 User.destroy_all
+Kondate.destroy_all
 Image.destroy_all
 
 users = []
@@ -47,5 +48,12 @@ end
     user_id: user.id,
     image_id: recipe.image_id,
     comment: "#{recipe.title}、とても作りやすかったです！"
+  )
+end
+
+10.times do |i|
+  Kondate.create!(
+    title: "献立#{i}",
+    description: "献立#{i}の説明"
   )
 end
