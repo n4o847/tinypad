@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル:</strong>
+  <%= @kondate.title %>
+</p>
+
+<p>
+  <strong>説明:</strong>
+  <%= @kondate.description %>
+</p>
+
+<%= link_to '献立を修正する', edit_kondate_path(@kondate) %> |
+<%= link_to '一覧に戻る', kondates_path %>
