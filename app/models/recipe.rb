@@ -2,6 +2,7 @@ class Recipe < ApplicationRecord
   has_many :steps, dependent: :destroy
   has_many :ingredients, dependent: :destroy
   has_many :tsukurepos, dependent: :destroy
+  has_many :kondates, dependent: :destroy, foreign_key: :main_dish_id
 
   belongs_to :user
   belongs_to :image, dependent: :destroy, optional: true

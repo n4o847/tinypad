@@ -52,8 +52,10 @@ end
 end
 
 10.times do |i|
+  main_dish = recipes.sample
   Kondate.create!(
     title: "献立#{i}",
-    description: "献立#{i}の説明"
+    description: "献立#{i}の説明",
+    main_dish_id: main_dish.id
   )
 end
